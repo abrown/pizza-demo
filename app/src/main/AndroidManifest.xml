@@ -21,6 +21,14 @@
         <activity
             android:name=".DrinkActivity"
             android:label="@string/title_activity_drink"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PizzaActivity"
+            android:label="@string/title_activity_pizza"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConfirmActivity"
+            android:label="@string/title_activity_confirm"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

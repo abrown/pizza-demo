@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
         WidgetHelper.goTo(this, DrinkActivity.class, R.id.drinkButton);
-        WidgetHelper.goTo(this, DrinkActivity.class, R.id.payButton);
-        WidgetHelper.goTo(this, DrinkActivity.class, R.id.pizzaButton);
+        WidgetHelper.goTo(this, ConfirmActivity.class, R.id.payButton);
+        WidgetHelper.goTo(this, PizzaActivity.class, R.id.pizzaButton);
     }
 
     @Override

@@ -7,9 +7,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 
+import com.example.abrown.pizza.data.Buyable;
 import com.example.abrown.pizza.data.Drink;
+import com.example.abrown.pizza.data.Pizza;
 
 
 public class WidgetHelper {
@@ -34,6 +39,25 @@ public class WidgetHelper {
         assert spinner != null;
         spinner.setAdapter(spinnerArrayAdapter);
         return spinner;
+    }
+
+    static <T> void populateCheckboxes(final Activity activity, @IdRes int tableResource, T[] items){
+        TableLayout tableLayout = (TableLayout) activity.findViewById(tableResource);
+        assert tableLayout != null;
+
+        TableRow row = null;
+        for(int i = 0; i < items.length; i++){
+            if(i % 3 == 0) {
+                row = new TableRow(activity);
+                row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+                tableLayout.addView(row);
+            }
+            assert row != null;
+
+            CheckBox ch = new CheckBox(activity);
+            ch.setText(items[i].toString());
+            row.addView(ch);
+        }
     }
 
     static Integer[] range(int min, int max){
