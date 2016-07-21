@@ -13,6 +13,7 @@
     tools:showIn="@layout/activity_pizza">
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
@@ -105,7 +106,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:background="@layout/border"></TableRow>
+            android:background="@layout/border">
+            <!-- for dynamic check boxes -->
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -130,5 +133,47 @@
         </TableRow>
 
     </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <!-- for dynamic items -->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order1"
+            android:src="@drawable/ic_local_pizza_white_24dp"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order2"
+            android:src="@drawable/ic_local_pizza_white_24dp"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order3"
+            android:src="@drawable/ic_local_drink_white_24dp"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalValue"
+            android:layout_gravity="center_vertical|end|right"
+            android:text="$10"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
 
 </RelativeLayout>
