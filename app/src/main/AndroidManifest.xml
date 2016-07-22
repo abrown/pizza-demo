@@ -29,6 +29,10 @@
         <activity
             android:name=".ConfirmActivity"
             android:label="@string/title_activity_confirm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SuccessActivity"
+            android:label="Success!"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
