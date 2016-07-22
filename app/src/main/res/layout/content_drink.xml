@@ -124,7 +124,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:paddingLeft="20dp" />
         </TableRow>
-
     </TableLayout>
 
+    <include layout="@layout/bar_order" />
 </RelativeLayout>

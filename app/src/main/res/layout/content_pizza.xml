@@ -131,49 +131,61 @@
                 android:text="$0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
-
     </TableLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal">
-        <!-- for dynamic items -->
+    <include layout="@layout/bar_order" />
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal">-->
+        <!--&lt;!&ndash; for dynamic items &ndash;&gt;-->
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/order1"
-            android:src="@drawable/ic_local_pizza_white_24dp"
-            android:background="@null"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp" />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/order2"
-            android:src="@drawable/ic_local_pizza_white_24dp"
-            android:background="@null"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp" />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/order3"
-            android:src="@drawable/ic_local_drink_white_24dp"
-            android:background="@null"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/totalValue"
-            android:layout_gravity="center_vertical|end|right"
-            android:text="$10"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_marginLeft="30dp" />
-    </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_gravity="center_vertical|left">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/order1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@null"-->
+                <!--android:src="@drawable/ic_local_pizza_white_24dp" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/order2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@null"-->
+                <!--android:src="@drawable/ic_local_pizza_white_24dp" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/order3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical|right"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@null"-->
+                <!--android:src="@drawable/ic_local_drink_white_24dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/totalValue"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center_vertical|right"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:text="$10"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+    <!--</RelativeLayout>-->
 
 </RelativeLayout>
